@@ -1,18 +1,7 @@
 [build]
   base = "frontend"
-  command = "cd ../backend && npm install && cd ../frontend && npm install && npm run build"
+  command = "npm install && npm run build"
   publish = "dist"
-  functions = "netlify/functions"
-
-[build.environment]
-  MONGO_URI = "mongodb+srv://devangsharma230467_db_user:Devang%40123@devamg506.j0g0dqx.mongodb.net/deskflow?appName=Devamg506"
-  VITE_API_URL = "/api"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
-  status = 200
-  force = true
 
 [[redirects]]
   from = "/*"

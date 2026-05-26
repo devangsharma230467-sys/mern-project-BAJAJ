@@ -13,4 +13,4 @@ services:
       - key: MONGO_URI
         sync: false
       - key: CLIENT_URL
-        value: https://deskflow-devang.netlify.app
+        value: https://jazzy-caramel-ac467b.netlify.app
